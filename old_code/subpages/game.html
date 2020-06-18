@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../styles/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/map.js" async></script>
+    <script type="text/javascript" src="../js/scenes.js" async></script>
+    <script type="text/javascript" src="../js/inventory.js" async></script>
+    <script type="text/javascript" src="../js/index.js" async></script>
+
+    <title>Empty Space</title>
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <section class="game-container">
+      <div class="interface">
+  <!-- UPPER GAME SCREEN -->
+        <div class="img-container">
+          <!-- Image Here -->
+          <div class="img-span"></div>
+          <h2 id="game-location"></h2>
+        </div>
+  <!-- LOWER GAME SCREEN -->
+        <div class="text-panel">
+        <!-- GAME TEXT -->
+          <p id="game-text"></p>
+        <!-- USER INPUT -->
+          <div class="input-area">
+            <input id="user-input" type="text" placeholder="Enter commands here . . .">
+            <button id="button">Enter</button>
+          </div>
+        </div>
+      </div>
+
+<!-- INVENTORY SCREEN -->
+      <div class="inventory">
+        <h3>Inventory</h3>
+      </div>
+    </section>
+  </body>
+</html>

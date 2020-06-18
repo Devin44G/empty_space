@@ -1,0 +1,158 @@
+/* Base Setting */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v16/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ZCOOL QingKe HuangYou';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ZCOOL QingKe HuangYou Regular'), local('ZCOOLQingKeHuangYou-Regular'), url(https://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mR4jPe4.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background: url('../../imgs/TitleScreenLogo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.background {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  top: 0;
+}
+h2,
+h3 {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  letter-spacing: 3px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #06752c;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-family: 'Dosis', sans-serif;
+  color: #06752c;
+  font-size: 2.5rem;
+}
+/* Home Page */
+.menu-section {
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-section .menu {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 3rem;
+  line-height: 4;
+}
+.menu-section .menu a {
+  text-decoration: none;
+  color: crimson;
+  z-index: 10;
+}
+/* Game Page */
+.game-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+.game-container .interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-container .interface .img-container {
+  width: 800px;
+  height: 550px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: solid 1rem black;
+  z-index: 10;
+}
+.game-container .interface .img-container h2 {
+  padding: 1rem;
+  position: absolute;
+}
+.game-container .interface .img-container .img-span {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+.game-container .interface .text-panel {
+  background-color: black;
+  width: 800px;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 10;
+}
+.game-container .interface .text-panel p {
+  padding-bottom: 2rem;
+}
+.game-container .interface .text-panel .input-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.game-container .interface .text-panel .input-area #user-input {
+  width: 60%;
+  height: 5rem;
+  border-radius: 10px;
+  border-style: none;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.game-container .interface .text-panel .input-area #user-input:focus {
+  outline: none;
+}
+.game-container .interface .text-panel .input-area #button {
+  padding: 1rem;
+  border-radius: 10px;
+}
+.game-container .interface .text-panel .input-area #button:focus {
+  outline: none;
+}
+.game-container .inventory {
+  height: 400px;
+  background-color: black;
+  padding: 2rem;
+  border: solid 1px green;
+  box-shadow: inset 0 0 10px 2px green;
+}
